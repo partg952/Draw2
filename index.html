@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +11,27 @@
     <title>Draw</title>
 </head>
 <body>
-    <button id="button">Erase</button>
+    <nav id="nav-bar">
+        <div id="size">
+            <input type="text" id="size-line" placeholder="Specify Stroke Size">
+           <input type="button" id="clear" value="clear">
+          
+        </div>
+        <div id="color">
+            <button id="blue">Blue</button>
+            <button id="yellow">Yellow</button>
+            <button id="red">Red</button>
+            <button id="purple">Purple</button>
+            <button id="orange">Orange</button>
+            <button id="button">Black</button>
+            <button id="white">White</button>
+            <button id="green">Green</button>
+            <button id="grey">Grey</button>
+            <button id="pink">Pink</button>
+            <button id="Gold">Gold</button>
+        </div>
+    </nav>
+    
     <canvas id="canvas"></canvas>
 </body>
 <script src="script.js"></script>

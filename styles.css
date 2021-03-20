@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+body{
+background-image:url(image.jpg);
+text-align:center;
+align-items:center;
+justify-content:center;
+
+}
+
+#nav-bar{
+    display: flex;
+}
+
+#size{
+    display: flex;
+    margin: 20px;
+    width: 50%;
+    padding: 10px;
+    background-color: transparent;
+    height:20%;
+}
+
+#color{
+    padding:10px;
+    background-color: transparent;
+    margin: 20px;
+    width: 50%;
+    text-align: right;
+    height:20%;
+}
+
+#color button{
+    margin: 20px;
+    border-radius: 50%;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+}
+#canvas{
+border:2px solid;
+border-color:black;
+
+background-color: transparent;
+}
+
+#clear{
+background-color: transparent;
+border: 0px solid;
+border-radius: 5px;
+box-shadow: 0px 0px 4px 0px black;    
+margin:20px;
+width: 90px;
+height: 40px;
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+transition: all 0.3s ease-in-out;
+}
+#clear:hover{
+    background-color: white;
+    border: 0px solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px black;    
+    margin:20px;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#size-line{
+    background-color: transparent;
+    border: 0px solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px black;    
+    margin:20px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s ease-in-out;
+    }
+
+
+#size-line:hover{
+        background-color: white;
+        border: 0px solid;
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px 0px black;    
+        margin:20px;
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+
+   

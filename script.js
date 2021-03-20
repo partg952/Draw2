@@ -1,21 +1,45 @@
 let canvas = document.getElementById("canvas")
 let ctx = canvas.getContext("2d")
-let drawing = true 
+let drawing = true
 let clicked = true
-let button = document.getElementById("button")
-button.addEventListener("click" , ()=>{
-    ctx.clearRect(0,0,2000,2000)
+let triangle = false
+let select = document.getElementById("line")
+let size = document.getElementById("size-line")
+let buttons = document.querySelectorAll("button")
+let clear = document.getElementById("clear")
+for(items of buttons){
+items.style.backgroundColor = items.innerHTML    
+items.addEventListener("click" , (e)=>{
+ctx.fillStyle = e.target.innerHTML
+drawing = true
 })
-canvas.width = 2000
-canvas.height = 2000
+
+
+}
+
+canvas.width = 1350
+canvas.height = 500
+ctx.width = 1350
+ctx.height = 500
+
+clear.addEventListener("click" , ()=>{
+
+ctx.clearRect(0,0,2000,2000)
+
+})
+
+
+
+
 ctx.fillStyle = "red"
-ctx.mouseCap = "circle"
+
 window.addEventListener("mousemove" , (e)=>{
     if(drawing == false){
-        let x = e.clientX
-        let y = e.clientY
+        let x =  e.clientX
+        let y =  e.clientY
         let sx = e.screenX
-        ctx.fillRect(x,y,30,30)
+        let sy = e.screenY
+        ctx.fillRect(x,y,size.value,size.value)
         
     
         console.log("moved")
@@ -29,17 +53,19 @@ window.addEventListener("mousemove" , (e)=>{
     
 })
 
-window.addEventListener("click" , ()=>{
+canvas.addEventListener("click" , ()=>{
     if(clicked == true){
-        drawing = true
+        drawing = false
         clicked = false
     }
     else{
-        drawing = false
+        drawing = true
         clicked = true
     }
     
-        })
+ })
+
+ 
 
 
 
